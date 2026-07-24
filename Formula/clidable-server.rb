@@ -5,6 +5,11 @@ class ClidableServer < Formula
   desc "CLI coding agents for everyone — Clidable server"
   homepage "https://github.com/openclide/clidable"
   version "0.1.0"
+  # Same artifacts as the published 0.1.0 release — the revision exists so
+  # EXISTING installs pick up the bin rename via `brew upgrade` (Homebrew
+  # upgrades on pkg_version = version+revision only; a formula-body change
+  # alone is invisible to installed kegs). Drop at the next version bump.
+  revision 1
   license "Apache-2.0"
 
   on_macos do
@@ -30,11 +35,17 @@ class ClidableServer < Formula
   end
 
   def install
-    bin.install Dir["clidable-server-*"].first => "clidable-server"
+    # The download artifact keeps the clidable-server-* name (distinguishable
+    # from the desktop installers in the release listing), but the command
+    # users type is `clidable`. Keep clidable-server as a symlink so anything
+    # scripted against the old name keeps working.
+    bin.install Dir["clidable-server-*"].first => "clidable"
+    bin.install_symlink "clidable" => "clidable-server"
   end
 
   test do
+    assert_path_exists bin/"clidable"
+    assert_predicate bin/"clidable", :executable?
     assert_path_exists bin/"clidable-server"
-    assert_predicate bin/"clidable-server", :executable?
   end
 end
