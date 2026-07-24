@@ -16,10 +16,6 @@ clidable
 
 The app serves its UI and API on port 7878 by default.
 
-> Renamed from `clidable-server` to `clidable` — the command you type. A
-> `tap_migrations.json` entry redirects the old name, so
-> `brew install openclide/tap/clidable-server` still resolves here.
-
 ## Formulae
 
 | Formula | Description |
