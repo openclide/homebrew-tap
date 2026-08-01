@@ -10,9 +10,9 @@
 cask "clidable-desktop" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.1.1"
-  sha256 arm:   "ce2a277029ace5ac64fbabdb9a53d3f482b260b41e425e430140a6b55b8ebfca",
-         intel: "f6cf4a5c2cee1df97a5f8ca945049b9ea48797bd04653494d2fa6e5f32ee8891"
+  version "0.1.2"
+  sha256 arm:   "e089813018fa7d214412885de831a04bf640fd5df8d2f236b16da32eec9ae078",
+         intel: "18bd495b88165046f8d6389be072ad544c4d8972ea92e29319a9ec3f2f2cb224"
 
   url "https://github.com/openclide/clidable/releases/download/v#{version}/Clidable_#{version}_#{arch}.dmg",
       verified: "github.com/openclide/clidable/"
