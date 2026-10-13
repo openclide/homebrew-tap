@@ -10,12 +10,11 @@
 cask "clidable-desktop" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.1.3"
-  sha256 arm:   "e4e57500a518faff4477be2f7b6b5b8ddc8de74f38a6dea2456366d7ec1221a1",
-         intel: "811c7c5b644c0d7abf24e295b7100bdac5eed6e99c409f3ed25c961d28190aac"
+  version "0.1.4"
+  sha256 arm:   "5cbc6f289d075394fd93d93e79636bf140f73d71c7f657faed298b8a40567bcd",
+         intel: "73d8ff4fc55aa65ca18b5819d71616354aaf8f209fd4d4897cba7525b4b8696c"
 
-  url "https://github.com/openclide/clidable/releases/download/v#{version}/Clidable_#{version}_#{arch}.dmg",
-      verified: "github.com/openclide/clidable/"
+  url "https://github.com/openclide/clidable/releases/download/v#{version}/Clidable_#{version}_#{arch}.dmg"
   name "Clidable"
   desc "GUI for CLI coding agents"
   homepage "https://github.com/openclide/clidable"
