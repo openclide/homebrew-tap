@@ -11,28 +11,28 @@
 class Clidable < Formula
   desc "GUI for CLI coding agents — server and CLI"
   homepage "https://github.com/openclide/clidable"
-  version "0.1.3"
+  version "0.1.4"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/openclide/clidable/releases/download/v0.1.3/clidable-server-darwin-arm64"
-      sha256 "e9edb3649aba36de96f21b2f0dd7afb08750751bcf16f22a0c89bf500e9f2782"
+      url "https://github.com/openclide/clidable/releases/download/v0.1.4/clidable-server-darwin-arm64"
+      sha256 "41ef9d7580ef327e04ed27d86c3f03bcbf45d80d2b0267c8afcbd8b43612dc12"
     end
     on_intel do
-      url "https://github.com/openclide/clidable/releases/download/v0.1.3/clidable-server-darwin-x64"
-      sha256 "76850f0150f1874790bf753f44e235a3e5c8608ba02c6b8254f7ffc41cb28b06"
+      url "https://github.com/openclide/clidable/releases/download/v0.1.4/clidable-server-darwin-x64"
+      sha256 "f1ade4d2ff7dbf6c54c61e74a18fd01e1003a4a5c958a3ef2908f11bb7e35099"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/openclide/clidable/releases/download/v0.1.3/clidable-server-linux-arm64"
-      sha256 "01b20a79dc79206d1c61527f7f741d82dfda2d9835f34009421bbe3805ee1ddf"
+      url "https://github.com/openclide/clidable/releases/download/v0.1.4/clidable-server-linux-arm64"
+      sha256 "e45e184e0cda659e20c0a18ae7ef03397dc22b4e9afa8b7a3185462ebf741aa3"
     end
     on_intel do
-      url "https://github.com/openclide/clidable/releases/download/v0.1.3/clidable-server-linux-x64"
-      sha256 "2666c1834f2c921e6df5ae422120768a28917b0f9dc4759ccf515ee18719aa97"
+      url "https://github.com/openclide/clidable/releases/download/v0.1.4/clidable-server-linux-x64"
+      sha256 "0ab760f52c642f7e8ef63c69bc8fa454c14f9d82e8bd5588a7d135584b6765fa"
     end
   end
 
